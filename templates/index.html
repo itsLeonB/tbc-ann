@@ -18,7 +18,7 @@
                 items-center
                 w-screen
                 h-screen
-                bg-indigo-500
+                bg-green-500
             "
         >
             <main
@@ -31,7 +31,7 @@
                     rounded-lg
                 "
             >
-                <h1 class="text-3xl text-bold">Paru-paru</h1>
+                <h1 class="text-3xl text-bold">TB detection app</h1>
 
                 {% if uploaded_image %}
                 <img
@@ -52,7 +52,7 @@
                     "
                 >
                     <p class="text-center">
-                        Masukkan gambar xray paru-paru
+                        Please input chest <br>X-ray image here
                     </p>
                 </div>
                 {% endif %} {% if prediction %}
@@ -79,22 +79,11 @@
                         type="submit"
                         class="p-4 bg-indigo-500 text-white rounded-md"
                     >
-                        Prediksi Gambar
-                    </button>
+                        Predict image
+                    </button><br>
+                    <small>By Kelompok 1: Rifdah, Linda, Daffa, Leon</small>
                 </form>
             </main>
         </section>
-        <footer class="flex gap-x-8 justify-center items-center h-32 bg-white">
-            <img
-                class="h-16"
-                src="https://digitalent.kominfo.go.id/assets/@images/logo.png"
-                alt="logo-dts"
-            />
-            <img
-                class="h-16"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Logo_of_Ministry_of_Communication_and_Information_Technology_of_the_Republic_of_Indonesia.svg/1200px-Logo_of_Ministry_of_Communication_and_Information_Technology_of_the_Republic_of_Indonesia.svg.png"
-                alt=""
-            />
-        </footer>
     </body>
 </html>

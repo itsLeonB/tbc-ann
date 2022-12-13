@@ -12,7 +12,7 @@ json_file.close()
 model = model_from_json(loaded_model_json)
 model.load_weights("model.h5")
 
-class_dict = {'Tubercolosis': 0, 'Normal': 1}
+class_dict = {'Tuberculosis': 0, 'Normal': 1}
 
 IMM_SIZE = 224
 
@@ -33,7 +33,7 @@ def predict_label(img_path):
     pred = pred.reshape(1, -1)[0]
     diag = {i for i in class_dict if class_dict[i] == pred}
     
-    return diag
+    return diag.pop()
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
