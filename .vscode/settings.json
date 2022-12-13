@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d23c004e-6d7b-4847-a170-ac611a2b4908/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/tbc-ann",
+    "appService.deploySubpath": "."
+}
